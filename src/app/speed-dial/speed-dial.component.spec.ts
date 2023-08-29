@@ -8,7 +8,7 @@ describe('SpeedDialComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SpeedDialComponent]
+      declarations: [SpeedDialComponent],
     });
     fixture = TestBed.createComponent(SpeedDialComponent);
     component = fixture.componentInstance;

@@ -8,7 +8,7 @@ describe('CollapseComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CollapseComponent]
+      declarations: [CollapseComponent],
     });
     fixture = TestBed.createComponent(CollapseComponent);
     component = fixture.componentInstance;

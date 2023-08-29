@@ -8,7 +8,7 @@ describe('DismissComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [DismissComponent]
+      declarations: [DismissComponent],
     });
     fixture = TestBed.createComponent(DismissComponent);
     component = fixture.componentInstance;

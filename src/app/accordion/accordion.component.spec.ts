@@ -8,7 +8,7 @@ describe('AccordionComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AccordionComponent]
+      declarations: [AccordionComponent],
     });
     fixture = TestBed.createComponent(AccordionComponent);
     component = fixture.componentInstance;

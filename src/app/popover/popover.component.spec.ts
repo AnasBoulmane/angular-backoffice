@@ -8,7 +8,7 @@ describe('PopoverComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PopoverComponent]
+      declarations: [PopoverComponent],
     });
     fixture = TestBed.createComponent(PopoverComponent);
     component = fixture.componentInstance;
