@@ -28,12 +28,12 @@ import { PopoverComponent } from './examples/popover/popover.component';
 import { SpeedDialComponent } from './examples/speed-dial/speed-dial.component';
 import { TabsComponent } from './examples/tabs/tabs.component';
 import { TooltipComponent } from './examples/tooltip/tooltip.component';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './home/components/header/header.component';
-import { FooterComponent } from './home/components/footer/footer.component';
-import { UserAvatarNavComponent } from './home/components/user-avatar-nav/user-avatar-nav.component';
 import { DashbordLayoutComponent } from './home/components/dashbord-layout/dashbord-layout.component';
+import { FooterComponent } from './home/components/footer/footer.component';
+import { HeaderComponent } from './home/components/header/header.component';
 import { ModeToggleComponent } from './home/components/mode-toggle/mode-toggle.component';
+import { UserAvatarNavComponent } from './home/components/user-avatar-nav/user-avatar-nav.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [

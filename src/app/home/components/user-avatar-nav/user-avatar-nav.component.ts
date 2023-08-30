@@ -18,7 +18,7 @@ export class UserAvatarNavComponent {
       },
       error: (error) => {
         console.log('Error', error);
-      }
+      },
     });
   }
 }

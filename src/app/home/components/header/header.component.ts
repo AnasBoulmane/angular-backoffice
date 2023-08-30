@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
       },
       error: () => {
         window.location.href = '/login';
-      }
+      },
     });
   }
 

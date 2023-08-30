@@ -8,7 +8,7 @@ describe('DashbordLayoutComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [DashbordLayoutComponent]
+      declarations: [DashbordLayoutComponent],
     });
     fixture = TestBed.createComponent(DashbordLayoutComponent);
     component = fixture.componentInstance;

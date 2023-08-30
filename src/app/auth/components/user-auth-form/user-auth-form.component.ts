@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { concat, delay, of } from 'rxjs';
+import { delay } from 'rxjs';
 import { UsersService } from 'src/app/users/services/users.service';
 
 import { AuthService } from '../../services/auth.service';
@@ -18,7 +18,6 @@ export class UserAuthFormComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-
     this.usersService.getUser().subscribe({
       next: () => (this.isLoading = true),
     });
@@ -52,6 +51,4 @@ export class UserAuthFormComponent implements OnInit {
   redirectToHome(): void {
     window.location.href = '/';
   }
-
-
 }

@@ -4,6 +4,4 @@ import { Component } from '@angular/core';
   selector: 'app-mode-toggle',
   templateUrl: './mode-toggle.component.html',
 })
-export class ModeToggleComponent {
-
-}
+export class ModeToggleComponent {}

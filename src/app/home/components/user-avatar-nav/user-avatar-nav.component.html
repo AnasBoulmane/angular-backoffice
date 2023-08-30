@@ -1,11 +1,18 @@
 <!-- <p *ngIf="user">hello {{user.firstName}}</p> -->
 
-<button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar"
-  class="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
-  type="button">
+<button
+  id="dropdownUserAvatarButton"
+  data-dropdown-toggle="dropdownAvatar"
+  class="mx-3 flex rounded-full bg-gray-800 text-sm focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600 md:mr-0"
+  type="button"
+>
   <span class="sr-only">Open user menu</span>
-  <span class="relative flex shrink-0 overflow-hidden rounded-full h-8 w-8">
-    <img class="aspect-square h-full w-full" alt="Picture" src="https://avatars.githubusercontent.com/u/17661697?v=4">
+  <span class="relative flex h-8 w-8 shrink-0 overflow-hidden rounded-full">
+    <img
+      class="aspect-square h-full w-full"
+      alt="Picture"
+      src="https://avatars.githubusercontent.com/u/17661697?v=4"
+    />
   </span>
 </button>
 
@@ -34,34 +41,70 @@
   </div>
 </div> -->
 
-
-<div id="dropdownAvatar"
-  class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow min-w-44 dark:bg-gray-700 dark:divide-gray-600">
-  <div data-side="bottom" data-align="end" role="menu" aria-orientation="vertical" data-state="open"
-    class="z-50 min-w-[8rem] overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md animate-in data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2">
+<div
+  id="dropdownAvatar"
+  class="min-w-44 z-10 hidden divide-y divide-gray-100 rounded-lg bg-white shadow dark:divide-gray-600 dark:bg-gray-700"
+>
+  <div
+    data-side="bottom"
+    data-align="end"
+    role="menu"
+    aria-orientation="vertical"
+    data-state="open"
+    class="z-50 min-w-[8rem] overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md animate-in data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2"
+  >
     <div class="flex items-center justify-start gap-2 p-2">
       <div *ngIf="user" class="flex flex-col space-y-1 leading-none">
-        <p class="font-medium">{{user.lastName}} {{user.firstName}}</p>
-        <p class="w-[200px] truncate text-sm text-muted-foreground">{{user.email}}</p>
+        <p class="font-medium">{{ user.lastName }} {{ user.firstName }}</p>
+        <p class="w-[200px] truncate text-sm text-muted-foreground">
+          {{ user.email }}
+        </p>
       </div>
     </div>
 
-    <div role="separator" aria-orientation="horizontal" class="-mx-1 my-1 h-px bg-muted"> </div>
+    <div
+      role="separator"
+      aria-orientation="horizontal"
+      class="-mx-1 my-1 h-px bg-muted"
+    ></div>
 
     <!-- <a role="menuitem"
       class="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
       tabIndex={-1} data-orientation="vertical" data-radix-collection-item="" href="/dashboard">Dashboard</a> -->
-    <a role="menuitem"
+    <a
+      role="menuitem"
       class="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
-      tabIndex={-1} data-orientation="vertical" data-radix-collection-item="" href="/dashboard/billing">Billing</a>
-    <a role="menuitem"
+      tabIndex="{-1}"
+      data-orientation="vertical"
+      data-radix-collection-item=""
+      href="/dashboard/billing"
+      >Billing</a
+    >
+    <a
+      role="menuitem"
       class="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
-      tabIndex={-1} data-orientation="vertical" data-radix-collection-item="" href="/dashboard/settings">Settings</a>
+      tabIndex="{-1}"
+      data-orientation="vertical"
+      data-radix-collection-item=""
+      href="/dashboard/settings"
+      >Settings</a
+    >
 
-    <div role="separator" aria-orientation="horizontal" class="-mx-1 my-1 h-px bg-muted"></div>
+    <div
+      role="separator"
+      aria-orientation="horizontal"
+      class="-mx-1 my-1 h-px bg-muted"
+    ></div>
 
-    <div role="menuitem"
-      class="relative flex select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50 cursor-pointer"
-      tabIndex={-1} data-orientation="vertical" data-radix-collection-item="" (click)="logout()">Sign out</div>
+    <div
+      role="menuitem"
+      class="relative flex cursor-pointer select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
+      tabIndex="{-1}"
+      data-orientation="vertical"
+      data-radix-collection-item=""
+      (click)="logout()"
+    >
+      Sign out
+    </div>
   </div>
 </div>

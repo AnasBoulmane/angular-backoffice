@@ -8,7 +8,7 @@ describe('ModeToggleComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ModeToggleComponent]
+      declarations: [ModeToggleComponent],
     });
     fixture = TestBed.createComponent(ModeToggleComponent);
     component = fixture.componentInstance;

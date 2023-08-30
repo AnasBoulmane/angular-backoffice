@@ -9,12 +9,12 @@ import { DismissComponent } from './examples/dismiss/dismiss.component';
 import { DrawerComponent } from './examples/drawer/drawer.component';
 import { DropdownComponent } from './examples/dropdown/dropdown.component';
 import { EventsComponent } from './examples/events/events.component';
+import { HomeComponent as LibComponent } from './examples/home/home.component';
 import { ModalComponent } from './examples/modal/modal.component';
 import { PopoverComponent } from './examples/popover/popover.component';
 import { SpeedDialComponent } from './examples/speed-dial/speed-dial.component';
 import { TabsComponent } from './examples/tabs/tabs.component';
 import { TooltipComponent } from './examples/tooltip/tooltip.component';
-import { HomeComponent as LibComponent } from './examples/home/home.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
