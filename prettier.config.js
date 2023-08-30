@@ -20,6 +20,8 @@ module.exports = {
     "^@/styles/(.*)$",
     "^@/app/(.*)$",
     "",
+    "^./(.*)module$",
+    "^./(.*)component$",
     "^[./]",
   ],
   maxLineLength: 120,

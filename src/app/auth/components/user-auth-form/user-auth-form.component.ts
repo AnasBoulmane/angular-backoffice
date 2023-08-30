@@ -33,8 +33,6 @@ export class UserAuthFormComponent implements OnInit {
   }
 
   onSubmit(username: string, password: string) {
-    this.isLoading = true;
-
     this.authService.login(username, password).subscribe({
       next: () => this.redirectToHome(),
       error: (error) => {

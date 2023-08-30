@@ -13,6 +13,7 @@ import {
 } from 'lucide-angular';
 
 import { AppRoutingModule } from './app-routing.module';
+import { ToastModule } from './toast/toast.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/components/login/login.component';
 import { UserAuthFormComponent } from './auth/components/user-auth-form/user-auth-form.component';
@@ -63,6 +64,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ToastModule,
     LucideAngularModule.pick({ ChevronLeft, Command, Loader2 }),
   ],
   providers: [],
