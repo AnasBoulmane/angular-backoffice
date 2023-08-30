@@ -1,21 +1,39 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {
+  ChevronLeft,
+  Command,
+  Loader2,
+  // File,
+  // Home,
+  LucideAngularModule,
+  // Menu,
+  // UserCheck,
+} from 'lucide-angular';
 
-import { AccordionComponent } from './accordion/accordion.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { CollapseComponent } from './collapse/collapse.component';
-import { DismissComponent } from './dismiss/dismiss.component';
-import { DrawerComponent } from './drawer/drawer.component';
-import { DropdownComponent } from './dropdown/dropdown.component';
-import { EventsComponent } from './events/events.component';
+import { LoginComponent } from './auth/components/login/login.component';
+import { UserAuthFormComponent } from './auth/components/user-auth-form/user-auth-form.component';
+import { AccordionComponent } from './examples/accordion/accordion.component';
+import { CarouselComponent } from './examples/carousel/carousel.component';
+import { CollapseComponent } from './examples/collapse/collapse.component';
+import { DismissComponent } from './examples/dismiss/dismiss.component';
+import { DrawerComponent } from './examples/drawer/drawer.component';
+import { DropdownComponent } from './examples/dropdown/dropdown.component';
+import { EventsComponent } from './examples/events/events.component';
+import { ModalComponent } from './examples/modal/modal.component';
+import { PopoverComponent } from './examples/popover/popover.component';
+import { SpeedDialComponent } from './examples/speed-dial/speed-dial.component';
+import { TabsComponent } from './examples/tabs/tabs.component';
+import { TooltipComponent } from './examples/tooltip/tooltip.component';
 import { HomeComponent } from './home/home.component';
-import { ModalComponent } from './modal/modal.component';
-import { PopoverComponent } from './popover/popover.component';
-import { SpeedDialComponent } from './speed-dial/speed-dial.component';
-import { TabsComponent } from './tabs/tabs.component';
-import { TooltipComponent } from './tooltip/tooltip.component';
+import { HeaderComponent } from './home/components/header/header.component';
+import { FooterComponent } from './home/components/footer/footer.component';
+import { UserAvatarNavComponent } from './home/components/user-avatar-nav/user-avatar-nav.component';
+import { DashbordLayoutComponent } from './home/components/dashbord-layout/dashbord-layout.component';
+import { ModeToggleComponent } from './home/components/mode-toggle/mode-toggle.component';
 
 @NgModule({
   declarations: [
@@ -33,8 +51,20 @@ import { TooltipComponent } from './tooltip/tooltip.component';
     PopoverComponent,
     TabsComponent,
     TooltipComponent,
+    LoginComponent,
+    UserAuthFormComponent,
+    HeaderComponent,
+    FooterComponent,
+    UserAvatarNavComponent,
+    DashbordLayoutComponent,
+    ModeToggleComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    LucideAngularModule.pick({ ChevronLeft, Command, Loader2 }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

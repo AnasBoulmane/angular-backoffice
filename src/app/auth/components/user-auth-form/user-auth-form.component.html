@@ -1,0 +1,26 @@
+<form (submit)="onSubmit(emailInput.value, passInput.value)">
+  <div class="grid gap-2">
+    <label class="sr-only text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+      htmlFor="email">Email</label>
+    <input
+      class="flex h-10 w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+      id="email" placeholder="name@example.com" autocapitalize="none" autoComplete="email" autocorrect="off"
+      type="email" name="email" #emailInput />
+
+    <label class="sr-only text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+      htmlFor="password">password</label>
+    <input
+      class="flex h-10 w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+      id="password" placeholder="password" autocapitalize="none" autoComplete="password" autocorrect="off"
+      type="password" name="password" #passInput />
+
+    <div *ngIf="error" class="flex items-center justify-center">
+      <p class="text-sm font-medium text-destructive">{{ error }}</p>
+    </div>
+    <button [disabled]="isLoading"
+      class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
+      <i-lucide *ngIf="isLoading" name="loader-2" class="mr-2 h-4 w-4 animate-spin" />
+      Sign In
+    </button>
+  </div>
+</form>
