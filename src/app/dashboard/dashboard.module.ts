@@ -7,6 +7,7 @@ import { DashboardLayoutComponent } from './components/dashboard-layout/dashboar
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ModeToggleComponent } from './components/mode-toggle/mode-toggle.component';
+import { PageSimpleLayoutComponent } from './components/page-simple-layout/page-simple-layout.component';
 import { UserAvatarNavComponent } from './components/user-avatar-nav/user-avatar-nav.component';
 import { HomeComponent } from './home/home.component';
 
@@ -18,12 +19,17 @@ import { HomeComponent } from './home/home.component';
     ModeToggleComponent,
     UserAvatarNavComponent,
     HomeComponent,
+    PageSimpleLayoutComponent,
   ],
   imports: [
     CommonModule,
     DashboardRoutingModule,
     LucideAngularModule.pick({ Command }),
   ],
-  exports: [DashboardLayoutComponent, ModeToggleComponent],
+  exports: [
+    DashboardLayoutComponent,
+    PageSimpleLayoutComponent,
+    ModeToggleComponent,
+  ],
 })
 export class DashboardModule {}

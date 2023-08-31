@@ -1,0 +1,23 @@
+<app-dashboard-layout>
+  <div class="flex flex-1 flex-col">
+    <header
+      *ngIf="!hideHeading"
+      class="container flex items-center justify-between space-y-2"
+    >
+      <h2 class="text-3xl font-bold tracking-tight">{{ title }}</h2>
+      <ng-content select="[actions]"></ng-content>
+    </header>
+    <div
+      dir="ltr"
+      data-orientation="horizontal"
+      class="flex flex-1 flex-col pt-8"
+      [ngClass]="{ 'pt-8': !hideHeading }"
+    >
+      <div
+        class="container flex-1 pb-4 group-[.is-content-bg]/page:border-t group-[.is-content-separator]/page:border-t group-[.is-content-bg]/page:bg-slate-50"
+      >
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>
+</app-dashboard-layout>
