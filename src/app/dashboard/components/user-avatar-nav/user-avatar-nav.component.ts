@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { AuthService } from 'src/app/auth/services/auth.service';
-import { User } from 'src/app/users/types/user';
+import { User } from 'src/app/shared/types/user';
 
 @Component({
   selector: 'app-user-avatar-nav',

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { delay } from 'rxjs';
-import { UsersService } from 'src/app/users/services/users.service';
+import { UsersService } from 'src/app/shared/services/users.service';
 
 import { AuthService } from '../../services/auth.service';
 
